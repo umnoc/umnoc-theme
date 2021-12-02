@@ -1,4 +1,4 @@
-// Theme overrides for edx.org
+// Theme overrides for umnoc
 //
 // The _extras.scss file is imported after all other rules by
 // the LMS Sass. For your own theme, you can override this file
@@ -8,6 +8,7 @@
 
 @import 'certificates';
 @import 'dashboard';
+@import 'footer';
 
 
 // Ensure the header matches the edx.org marketing site header
