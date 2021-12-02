@@ -17,11 +17,17 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  #main {
-    flex: 1 0 auto;
-  }
+  background: url(/static/studio/umnoc-theme/images/umnoc-bg-circles.svg) no-repeat;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: 100% auto;
+  background-position: bottom;
 }
+
+#main {
+  flex: 1 0 auto;
+}
+
 
 .list-courses {
   background: $white;
