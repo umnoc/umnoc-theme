@@ -1,0 +1,13 @@
+.global-header {
+  .nav-links {
+    .main {
+      .nav-tab {
+        a {
+          &:hover {
+            color: $umnoc-pink;
+          }
+        }
+      }
+    }
+  }
+}
