@@ -38,6 +38,10 @@
   width: auto;
 }
 
+.find-courses, .university-profile {
+  background: transparent;
+}
+
 .btn-primary {
   &:hover {
     background-color: $white;
