@@ -1,6 +1,5 @@
 // Override theming for edx.org bootstrap
 
-@import "/edx/app/edxapp/edx-platform/node_modules/@edx/edx-bootstrap/scss/open-edx/theme.scss";
 
 // Variables
 //
@@ -1124,3 +1123,5 @@ $positions: static, relative, absolute, fixed, sticky !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+@import 'edx-bootstrap/sass/open-edx/theme';
