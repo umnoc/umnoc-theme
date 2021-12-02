@@ -1,8 +1,5 @@
 .wrapper-footer {
-  box-shadow: 0 -1px 5px 0 $shadow-l1;
-  border-top: 1px solid $navbar-light-disabled-color;
   background-color: $umnoc-blue;
-  color: $white;
   margin-top: $baseline/2;
   padding: $baseline;
   font-family: $font-family-sans-serif;
@@ -21,19 +18,20 @@
         .nav-link {
           text-decoration: none;
           padding: 0;
-          color: $gray-900;
+          color: $white;
 
           &:hover {
-            color: $white;
+            color: $gray-100;
+          }
         }
       }
     }
-  }
+
     .wrapper-logo {
       img {
         height: $header-logo-height * 1.05;
+      }
     }
-  }
 
     .legal-nav {
       padding: 0;
@@ -44,17 +42,17 @@
           padding: 0;
           margin-right: $baseline/4;
           font-size: 0.8em;
+        }
       }
-    }
 
       li:not(:first-child) a::before {
         content: "- ";
+      }
     }
-  }
 
     .footer-language-selector {
       margin: $baseline 0;
-  }
+    }
 
     .copyright {
       @include text-align(left);
@@ -62,10 +60,39 @@
       margin: -2px 0 8px;
       font-size: 0.8em;
       color: $gray-100;
-  }
+    }
 
     .footer-about-openedx {
       float: right;
+    }
+
+    .colophon {
+
+      .nav-colophon {
+        @include clearfix();
+
+        margin: $footer_margin;
+
+        li {
+          @include float(left);
+
+          margin-right: ($baseline*0.75);
+
+          a {
+            color: $white;
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: $gray-100;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
-}
 }
