@@ -10,16 +10,16 @@ html {
 
   body {
     background: $white !important;
+  }
+}
 
-    .wrapper .wrapper-view {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
+.wrapper.wrapper-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-      #main {
-        flex: 1 0 auto;
-      }
-    }
+  #main {
+    flex: 1 0 auto;
   }
 }
 
