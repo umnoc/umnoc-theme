@@ -5,13 +5,10 @@ from django.utils.translation import ugettext as _
 from django.urls import reverse
 from datetime import datetime
 from django.conf import settings
-from lms.djangoapps.branding.api import get_footer
 import pytz
 from cms.djangoapps.contentstore.config.waffle import waffle, ENABLE_ACCESSIBILITY_POLICY_PAGE
 from openedx.core.djangolib.markup import HTML, Text
 %>
-
-<% footer = get_footer(is_secure=is_secure) %>
 
 <div class="wrapper-footer wrapper">
   <footer class="primary" role="contentinfo">
@@ -31,7 +28,7 @@ from openedx.core.djangolib.markup import HTML, Text
             ## can be included in the footer on other sites
             ## (e.g. a blog or marketing front-end) to provide a consistent
             ## user experience.  See the branding app for details.
-            <img alt="${_('organization logo')}" src="${footer['logo_image']}">
+            <img alt="${_('organization logo')}" src="/static/umnoc-theme/images/logo-footer.png">
           </a>
         </p>
       </div>
