@@ -39,6 +39,9 @@
   flex: 1;
 }
 
+.courses-listing-item {
+  width: auto;
+}
 
 .btn-primary {
   &:hover {
@@ -139,6 +142,7 @@
 }
 
 .content-wrapper {
+  margin: inherit !important;
   .course-tabs {
     overflow-x: auto;
 
