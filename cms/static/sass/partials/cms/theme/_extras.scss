@@ -28,7 +28,8 @@ html {
   border-bottom: 0;
   padding-bottom: 0;
 
-  .button.new-button {
+  .button.new-button,
+  .action-create-library {
     background: $umnoc-blue;
     font-weight: 600;
     color: $white;
@@ -42,7 +43,31 @@ html {
       border: 2px solid $umnoc-blue;
     }
   }
+}
 
+.notice-instruction {
+  background-color: white;
+}
+
+.xblock-visibility_view .is-not-configured, .view-outline .content-primary .no-content, .view-static-pages .content-primary .add-pages,
+.view-container .content-primary .no-container-content,
+.view-textbooks .content-primary .no-textbook-content,
+.view-group-configurations .content-primary .no-content,
+.view-certificates .content-primary .no-content, .ui-loading, .notice-incontext,
+.view-uploads .no-asset-content,
+.view-import .wrapper-file-name, .view-group-configurations .content-primary .notice-moduledisabled,
+.view-certificates .content-primary .notice-moduledisabled {
+  border: 1px dashed rgb(247, 148, 29);
+  padding: 15px 20px;
+  box-shadow: 2px 1px 5px 0px rgba(49, 39, 131, 0.2);
+}
+
+.nav-account .title {
+  background: transparent;
+  color: $gray-900;
+  padding: 5px 10px;
+  border: 0;
+  text-align: center;
 }
 
 .wrapper-sock {
