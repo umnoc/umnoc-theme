@@ -65,16 +65,19 @@
     background-color: $white;
     color: $umnoc-blue;
   }
+
   &.is-hovered {
     border-color: $white;
     background-color: $white;
     color: $umnoc-blue;
   }
+
   &:focus {
     border-color: $white;
     background-color: $white;
     color: $umnoc-blue;
   }
+
   &.is-focused {
     border-color: $white;
     background-color: $white;
@@ -88,17 +91,20 @@
     background-color: $white;
     color: $umnoc-blue;
   }
+
   &:focus {
     border-color: $white;
     background-color: $white;
     color: $umnoc-blue;
   }
 }
+
 .is-hovered.btn-brand {
   border-color: $white;
   background-color: $white;
   color: $umnoc-blue;
 }
+
 .is-focused.btn-brand {
   border-color: $white;
   background-color: $white;
@@ -153,6 +159,8 @@
 
 .content-wrapper {
   .course-tabs {
+    overflow-x: auto;
+
     .nav-item {
       .nav-link {
         border-bottom: 6px solid transparent;
@@ -175,14 +183,41 @@
   }
 }
 
+.page-header {
+  .page-header-main {
+    .page-title {
+      color: $umnoc-pink;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+}
+
 .course-sidebar .section h3 {
   color: $umnoc-pink !important;
 }
 
-.wrapper-msg.wrapper-auto-cert .auto-cert-message {
-  background: $umnoc-background-yellow;
+.wrapper-msg.wrapper-auto-cert {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background: none;
+  font-weight: bold;
+  color: white;
+
+  .auto-cert-message {
+    background: $umnoc-background-yellow;
+    border-left: none;
+    padding: 1vw;
+
+    .msg-content .title {
+      font-weight: 600;
+      font-size: 150%;
+      text-shadow: 1px 1px 1px #C15333;
+    }
+  }
 }
 
 a:not(.btn), a:visited:not(.btn) {
   font-weight: 400;
 }
+

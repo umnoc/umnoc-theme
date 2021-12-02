@@ -1,8 +1,14 @@
 .global-header {
+  margin: 0 auto;
+  max-width: 1920px;
+  border-bottom: transparent;
+  box-shadow: none;
+
   .nav-links {
     .main {
       .nav-tab {
         a {
+        font-weight: 400;
           &:hover {
             color: $umnoc-pink !important;
           }
