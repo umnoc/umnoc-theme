@@ -3,5 +3,9 @@
 }
 
 .dashboard {
-
+  article.course {
+    border: 2px solid $umnoc-blue;
+    border-radius: .7rem;
+    padding: 1.5rem;
+  }
 }
