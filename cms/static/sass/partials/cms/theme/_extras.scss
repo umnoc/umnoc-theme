@@ -27,6 +27,22 @@ html {
 .wrapper-mast .mast {
   border-bottom: 0;
   padding-bottom: 0;
+
+  .button.new-button {
+    background: $umnoc-blue;
+    font-weight: 600;
+    color: $white;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $white;
+      color: $umnoc-blue;
+      border: 2px solid $umnoc-blue;
+    }
+  }
+
 }
 
 .wrapper-sock {
@@ -60,4 +76,13 @@ html {
   }
 }
 
+.courses-tab a {
+  font-size: 1.4rem;
+  font-weight: 600;
 
+  &:hover {
+    color: $umnoc-pink;
+  }
+}
+
+}
