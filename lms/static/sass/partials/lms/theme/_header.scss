@@ -1,19 +1,14 @@
 .global-header {
-  margin: 0 auto;
-  max-width: 1920px;
   border-bottom: transparent;
   box-shadow: none;
+  margin: 0 auto;
+  max-width: 1920px;
+}
 
-  .nav-links {
-    .main {
-      .nav-tab {
-        a {
-        font-weight: 400;
-          &:hover {
-            color: $umnoc-pink !important;
-          }
-        }
-      }
-    }
+.nav-links .nav-tab a {
+  font-weight: 400;
+
+  &:hover {
+    color: $umnoc-pink;
   }
 }

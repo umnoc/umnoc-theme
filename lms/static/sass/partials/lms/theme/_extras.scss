@@ -1,10 +1,4 @@
 // Theme overrides for umnoc
-//
-// The _extras.scss file is imported after all other rules by
-// the LMS Sass. For your own theme, you can override this file
-// to add any custom rules that you need. You can also import
-// partials directly into this file so that you can break your
-// rules into modular pieces.
 
 @import 'certificates';
 @import 'dashboard';
@@ -18,9 +12,9 @@
     margin-left: calc(50% - 30px) !important;
 
     .logo {
-      margin-left: 0 !important;
       width: $header-logo-width;
       height: auto !important;
+      margin-left: 0;
     }
   }
 }
@@ -31,8 +25,9 @@
 
 .window-wrap {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
+
 }
 
 .content-wrapper.main-container {
@@ -40,58 +35,58 @@
 }
 
 .courses-listing-item {
-  width: auto !important;
+  width: auto;
 }
 
 .btn-primary {
   &:hover {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 
   &.is-hovered {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 
   &:focus {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 
   &.is-focused {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 }
 
 .btn-brand {
   &:hover {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 
   &:focus {
-    border-color: $white;
     background-color: $white;
+    border-color: $white;
     color: $umnoc-blue;
   }
 }
 
 .is-hovered.btn-brand {
-  border-color: $white;
   background-color: $white;
+  border-color: $white;
   color: $umnoc-blue;
 }
 
 .is-focused.btn-brand {
-  border-color: $white;
   background-color: $white;
+  border-color: $white;
   color: $umnoc-blue;
 }
 
@@ -102,47 +97,42 @@
   }
 }
 
-.dashboard {
-  .main-container {
-    .my-courses {
-      .course {
-        .details {
-          .enter-course {
-            background-color: $umnoc-blue !important;
-            color: $white !important;
-            border-radius: .3rem;
-          }
-        }
-      }
-    }
+
+.main-container .my-courses .course .details {
+  .enter-course {
+    background-color: $umnoc-blue;
+    border-radius: .3rem;
+    color: $white;
   }
 }
+
 
 .wrapper-messages-primary {
   .message.message-upsell {
     .action-view-consent {
-      background-color: $umnoc-blue !important;
-      color: $white !important;
+      background-color: $umnoc-blue;
       border-radius: .3rem;
+      color: $white;
     }
   }
 }
 
 .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
-  border-color: $white;
   background-color: $white;
+  border-color: $white;
   color: $umnoc-blue;
 }
 
 
 .btn-secondary:hover {
+  background-color: $white;
   border: 1px solid $umnoc-blue;
-  background-color: $white !important;
-  color: $umnoc-blue !important;
+  color: $umnoc-blue;
 }
 
 .content-wrapper {
-  margin: inherit !important;
+  margin: inherit;
+
   .course-tabs {
     overflow-x: auto;
 
@@ -179,30 +169,32 @@
 }
 
 .course-sidebar .section h3 {
-  color: $umnoc-pink !important;
+  color: $umnoc-pink;
 }
 
 .wrapper-msg.wrapper-auto-cert {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
   background: none;
+  color: $white;
   font-weight: bold;
-  color: white;
+  margin: 0;
+  padding: 0;
 
   .auto-cert-message {
+
     background: $umnoc-background-yellow;
-    border-left: none;
+    border-left: 0;
     padding: 1vw;
 
     .msg-content .title {
-      font-weight: 600;
       font-size: 150%;
-      text-shadow: 1px 1px 1px #C15333;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px $umnoc-rusty;
     }
   }
 }
 
-a:not(.btn), a:visited:not(.btn) {
+a:not(.btn),
+a:visited:not(.btn) {
   font-weight: 400;
 }
 

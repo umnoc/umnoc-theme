@@ -1,6 +1,6 @@
-@import "variables";
+@import 'variables';
 
-h1.page-header {
+.page-header {
   color: $umnoc-pink;
   font-weight: 600;
 }
@@ -9,7 +9,7 @@ html {
   height: 100%;
 
   body {
-    background: $white !important;
+    background: $white;
   }
 }
 
@@ -23,10 +23,10 @@ html {
   }
 }
 
-.view-dashboard .list-courses {
-  background: #fed70212;
-  border: 2px solid #312783;
-  border-radius: 0.3rem;
+.list-courses {
+  background: $white;
+  border: 2px solid $umnoc-blue;
+  border-radius: .3rem;
 
   .course-item {
     .course-title {
@@ -38,16 +38,11 @@ html {
       font-size: 1.4rem;
       line-height: 3rem;
     }
-  }
 
-  .item-actions.course-actions {
-    .action {
-      a {
-        font-size: 1.4rem;
-        font-weight: 400;
-      }
+    .item-actions.course-actions .action a {
+      font-size: 1.4rem;
+      font-weight: 400;
     }
-
   }
 }
 

@@ -1,24 +1,25 @@
 .wrapper-footer {
   background-color: $umnoc-blue;
+  font-family: $font-family-sans-serif;
   margin-top: $baseline/2;
   padding: $baseline;
-  font-family: $font-family-sans-serif;
+
 
   footer {
     max-width: map-get($container-max-widths, xl);
     margin: 0 auto;
 
     .site-nav {
-      padding: 0;
       margin-bottom: $baseline;
+      padding: 0;
 
       .nav-item {
         margin-right: $baseline;
 
         .nav-link {
-          text-decoration: none;
-          padding: 0;
           color: $white;
+          padding: 0;
+          text-decoration: none;
 
           &:hover {
             color: $gray-100;
@@ -27,10 +28,8 @@
       }
     }
 
-    .wrapper-logo {
-      img {
-        height: $header-logo-height * 1.05;
-      }
+    .wrapper-logo img {
+      height: $header-logo-height * 1.05;
     }
 
     .legal-nav {
@@ -38,10 +37,10 @@
 
       .nav-item {
         .nav-link {
-          text-decoration: none;
-          padding: 0;
           margin-right: $baseline/4;
-          font-size: 0.8em;
+          font-size: .8em;
+          padding: 0;
+          text-decoration: none;
         }
       }
 
@@ -58,7 +57,7 @@
       @include text-align(left);
 
       margin: -2px 0 8px;
-      font-size: 0.8em;
+      font-size: .8em;
       color: $gray-100;
     }
 
@@ -74,7 +73,7 @@
         li {
           @include float(left);
 
-          margin-right: ($baseline*0.75);
+          margin-right: ($baseline*.75);
 
           a {
             color: $white;
