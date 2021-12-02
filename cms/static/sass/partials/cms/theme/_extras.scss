@@ -7,15 +7,48 @@ h1.page-header {
 
 html {
   height: 100%;
-}
 
-.wrapper .wrapper-view {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  body {
+    background: $white !important;
 
-  #main {
-    flex: 1 0 auto;
+    .wrapper .wrapper-view {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      #main {
+        flex: 1 0 auto;
+      }
+    }
   }
 }
+
+.view-dashboard .list-courses {
+  background: #fed70212;
+  border: 2px solid #312783;
+  border-radius: 0.3rem;
+
+  .course-item {
+    .course-title {
+      font-weight: 600;
+    }
+
+    .course-metadata {
+      color: $gray-900;
+      font-size: 1.4rem;
+      line-height: 3rem;
+    }
+  }
+
+  .item-actions.course-actions {
+    .action {
+      a {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+
+  }
+}
+
 
