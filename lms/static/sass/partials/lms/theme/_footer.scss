@@ -71,8 +71,6 @@
       .nav-colophon {
         @include clearfix();
 
-        margin: $footer_margin;
-
         li {
           @include float(left);
 
