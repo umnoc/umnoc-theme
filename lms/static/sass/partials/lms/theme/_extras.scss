@@ -66,12 +66,32 @@
   }
 }
 
-.dashboard .main-container .my-courses .course .details .enter-course,
-.wrapper-messages-primary .message.message-upsell .action-view-consent {
-  background-color: $umnoc-blue !important;
-  color: $white !important;
-  border-radius: .3rem;
+.dashboard {
+  .main-container {
+    .my-courses {
+      .course {
+        .details {
+          .enter-course {
+            background-color: $umnoc-blue !important;
+            color: $white !important;
+            border-radius: .3rem;
+          }
+        }
+      }
+    }
+  }
 }
+
+.wrapper-messages-primary {
+  .message.message-upsell {
+    .action-view-consent {
+      background-color: $umnoc-blue !important;
+      color: $white !important;
+      border-radius: .3rem;
+    }
+  }
+}
+
 
 .btn-secondary:hover {
   border: 1px solid $umnoc-blue;
@@ -79,14 +99,27 @@
   color: $umnoc-blue !important;
 }
 
-.content-wrapper .course-tabs .nav-item {
-  .nav-link {
-    border-bottom: 6px solid transparent;
-  }
+.content-wrapper {
+  .course-tabs {
+    .nav-item {
+      .nav-link {
+        border-bottom: 6px solid transparent;
+      }
 
-  &.active .nav-link, &:hover .nav-link {
-    border-bottom-color: $umnoc-menu-border-color;
-    color: $umnoc-pink;
+      &:hover {
+        .nav-link {
+          border-bottom-color: $umnoc-menu-border-color;
+          color: $umnoc-pink;
+        }
+      }
+    }
+
+    .nav-item.active {
+      .nav-link {
+        border-bottom-color: $umnoc-menu-border-color;
+        color: $umnoc-pink;
+      }
+    }
   }
 }
 
