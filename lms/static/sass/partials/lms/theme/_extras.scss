@@ -66,3 +66,16 @@
   }
 }
 
+.dashboard .main-container .my-courses .course .details .enter-course,
+.wrapper-messages-primary .message.message-upsell .action-view-consent {
+  background-color:$umnoc-blue !important;
+  color:$white !important;
+  border-radius: .3rem;
+}
+
+.btn-secondary:hover {
+  border:1px solid $umnoc-blue;
+  background-color:$white !important;
+  color:$umnoc-blue !important;
+}
+
