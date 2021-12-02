@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
-$body-bg: #b3d4fc !default;
-$footer-bg: $umnoc-blue;
+
 $umnoc-blue: #312783 !default;
 $umnoc-pink: #E6007E !default;
 $umnoc-menu-border-color: #E1DFEF !default;
+$umnoc-bg: #b3d4fc !default;
+$blue: $umnoc-blue !default;
+$dark-blue: #306980 !default;
+$indigo: #662483 !default;
+$red: #ED1651 !default;
+$yellow: #FFDD00 !default;
+$green: #008a5b !default;
+$slate: $gray-700 !default;
+$magenta: $umnoc-pink !default;
 
+$body-bg: $umnoc-bg !default;
+$footer-bg: $umnoc-blue !default;
 
 $serif: 'Montserrat', sans-serif;
 $font-family-sans-serif: 'Montserrat', sans-serif;
