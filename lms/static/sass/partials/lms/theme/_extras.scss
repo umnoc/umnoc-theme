@@ -59,6 +59,52 @@
 }
 
 
+.btn-primary {
+  &:hover {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+  &.is-hovered {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+  &:focus {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+  &.is-focused {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+}
+
+.btn-brand {
+  &:hover {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+  &:focus {
+    border-color: $white;
+    background-color: $white;
+    color: $umnoc-blue;
+  }
+}
+.is-hovered.btn-brand {
+  border-color: $white;
+  background-color: $white;
+  color: $umnoc-blue;
+}
+.is-focused.btn-brand {
+  border-color: $white;
+  background-color: $white;
+  color: $umnoc-blue;
+}
+
 .wrapper-header-courses {
   .header-courses {
     color: $umnoc-pink;
@@ -90,6 +136,12 @@
       border-radius: .3rem;
     }
   }
+}
+
+.btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
+  border-color: $white;
+  background-color: $white;
+  color: $umnoc-blue;
 }
 
 
@@ -125,4 +177,12 @@
 
 .course-sidebar .section h3 {
   color: $umnoc-pink !important;
+}
+
+.wrapper-msg.wrapper-auto-cert .auto-cert-message {
+  background: $umnoc-background-yellow;
+}
+
+a:not(.btn), a:visited:not(.btn) {
+  font-weight: 400;
 }
