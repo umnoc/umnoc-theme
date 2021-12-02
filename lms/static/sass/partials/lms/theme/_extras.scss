@@ -9,6 +9,7 @@
 @import 'certificates';
 @import 'dashboard';
 @import 'footer';
+@import 'variables';
 
 
 // Ensure the header matches the edx.org marketing site header
@@ -23,3 +24,41 @@
     }
   }
 }
+
+.umnoc-pink {
+  color: $umnoc-pink;
+}
+
+
+#main-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right: auto;
+  flex: 1;
+
+
+  li {
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    margin-right: 3.5em;
+    color: $umnoc-blue;
+    border-bottom: 6px solid transparent;
+
+    a {
+      padding: 1.5em 0;
+      display: block;
+      color: inherit;
+    }
+
+    .active, &:hover {
+      color: $umnoc-pink;
+      border-color: $umnoc-pink;
+    }
+  }
+}
+
+
+
+
+

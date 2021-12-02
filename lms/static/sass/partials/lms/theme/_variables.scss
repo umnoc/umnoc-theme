@@ -1,4 +1,4 @@
-// Override theming for edx.org bootstrap
+// Override theming for umnoc bootstrap
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
@@ -42,6 +42,7 @@ $grays: map-merge(
 );
 
 $umnoc-blue:  #312783 !default;
+$umnoc-pink:  #E6007E !default;
 $blue:        #312783 !default;
 $dark-blue:   #065784 !default;
 $indigo:      #45096b !default;
