@@ -1,9 +1,13 @@
 .global-header {
   border-bottom: transparent;
   box-shadow: none;
-  margin: 0 auto;
-  max-width: 1920px;
+
+  .main-header {
+    margin: 0 auto;
+    max-width: 1920px;
+  }
 }
+
 
 .nav-links .nav-tab a {
   font-weight: 400;
