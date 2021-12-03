@@ -102,6 +102,10 @@
   }
 
   .nav-legal {
+
+    li {
+      padding-bottom: .5rem;
+    }
     a {
       color: $white !important;
     }
