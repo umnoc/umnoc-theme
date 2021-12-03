@@ -139,6 +139,8 @@
   max-width: none;
 
   .course-tabs {
+    margin: 0 auto;
+    max-width: 1920px;
     overflow-x: auto;
 
     .nav-item {
@@ -196,6 +198,10 @@
       text-shadow: 1px 1px 1px $umnoc-rusty;
     }
   }
+}
+
+.wrapper-preview-menu {
+  margin: unset;
 }
 
 a:not(.btn),
