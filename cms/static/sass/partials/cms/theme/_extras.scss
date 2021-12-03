@@ -13,6 +13,15 @@ html {
   }
 }
 
+.wrapper-header {
+  background: $white;
+  border-bottom: 1px solid $umnoc-blue;
+  box-shadow: 0 2px 2px 0 transparentize($umnoc-blue, .2);
+  padding: .5rem 0;
+  position: relative;
+  width: 100%;
+}
+
 .wrapper.wrapper-view {
   background: url('/static/studio/umnoc-theme/images/umnoc-bg-circles.svg') no-repeat;
   background-position: bottom;
