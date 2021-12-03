@@ -27,21 +27,24 @@ html {
 .wrapper-mast .mast {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
+}
 
-  .button.new-button,
-  .action-create-library {
-    background: $umnoc-blue !important;
-    font-weight: 600 !important;
-    color: $white !important;
-    font-size: 1.6rem !important;
-    border-radius: 2rem !important;
-    padding: 1rem !important;
+.button.new-button,
+.action-create-library,
+.button,
+.new-button {
+  background: $umnoc-blue !important;
+  border-color: $umnoc-blue !important;
+  font-weight: 600 !important;
+  color: $white !important;
+  font-size: 1.6rem !important;
+  border-radius: 2rem !important;
+  padding: 1rem !important;
 
-    &:hover {
-      background-color: $white !important;
-      color: $umnoc-blue !important;
-      border: 2px solid $umnoc-blue !important;
-    }
+  &:hover {
+    background-color: $white !important;
+    color: $umnoc-blue !important;
+    border: 2px solid $umnoc-blue !important;
   }
 }
 
