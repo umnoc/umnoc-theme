@@ -6,8 +6,11 @@
 
 
   footer#footer-umnoc {
-    max-width: map-get($container-max-widths, xl);
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    max-width: map-get($container-max-widths, xl);
+
 
     .site-nav {
       margin-bottom: $baseline;
@@ -66,6 +69,11 @@
     }
 
     .colophon {
+      nav,
+      div,
+      p {
+        padding-bottom: 1rem;
+      }
 
       .nav-colophon {
         @include clearfix();
@@ -90,6 +98,12 @@
           }
         }
       }
+    }
+  }
+
+  .nav-legal {
+    a {
+      color: $white !important;
     }
   }
 }
