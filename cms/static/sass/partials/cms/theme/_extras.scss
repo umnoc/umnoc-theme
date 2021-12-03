@@ -25,22 +25,22 @@ html {
 }
 
 .wrapper-mast .mast {
-  border-bottom: 0;
-  padding-bottom: 0;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
 
   .button.new-button,
   .action-create-library {
-    background: $umnoc-blue;
-    font-weight: 600;
-    color: $white;
-    font-size: 1.6rem;
-    border-radius: 2rem;
-    padding: 1rem;
+    background: $umnoc-blue !important;
+    font-weight: 600 !important;
+    color: $white !important;
+    font-size: 1.6rem !important;
+    border-radius: 2rem !important;
+    padding: 1rem !important;
 
     &:hover {
-      background-color: $white;
-      color: $umnoc-blue;
-      border: 2px solid $umnoc-blue;
+      background-color: $white !important;
+      color: $umnoc-blue !important;
+      border: 2px solid $umnoc-blue !important;
     }
   }
 }
