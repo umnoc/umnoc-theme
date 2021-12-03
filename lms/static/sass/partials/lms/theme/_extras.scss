@@ -208,5 +208,9 @@
 a:not(.btn),
 a:visited:not(.btn) {
   font-weight: 400;
+  &:hover,
+  &:focus {
+    color: $umnoc-blue;
+  }
 }
 
