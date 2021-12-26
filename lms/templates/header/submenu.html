@@ -1,0 +1,12 @@
+## mako
+
+<%page expression_filter="h" args="online_help_token"/>
+
+<%namespace name='static' file='../static_content.html'/>
+<%namespace file='../main.html' import="login_query"/>
+
+% if user.is_authenticated:
+<%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+% else:
+<%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+% endif
