@@ -1,10 +1,22 @@
 .global-header {
-  //border-bottom: transparent;
-  //box-shadow: none;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 24px;
 
   .main-header {
     margin: 0 auto;
     max-width: 1920px;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+
+    a {
+    margin: unset;
+    }
   }
 
   .partner-icons {
@@ -13,10 +25,19 @@
 }
 
 
-.nav-links .nav-tab a {
-  font-weight: 400;
+.nav-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  max-width: 1200px;
+  padding: 0 24px;
 
-  &:hover {
-    color: $umnoc-pink;
+  .nav-tab a {
+    font-weight: 400;
+
+    &:hover {
+      color: $umnoc-pink;
+    }
   }
 }
