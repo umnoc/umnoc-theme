@@ -126,13 +126,13 @@
 .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
   background-color: $white;
   border-color: $white;
-  color: $umnoc-blue;
+  color: $umnoc-border-color;
 }
 
 
 .btn-secondary:hover {
   background-color: $white;
-  border: 1px solid $umnoc-blue;
+  border: 1px solid $umnoc-border-color;
   color: $umnoc-blue;
 }
 
