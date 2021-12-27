@@ -22,10 +22,11 @@
     }
 
     .wrapper-course-image {
-      width: 15%;
+      max-height: 180px;
+      width: 25%;
 
       .course-image {
-        height: 150px;
+        height: 180px;
         width: auto !important;
       }
     }
