@@ -18,7 +18,9 @@ from lms.djangoapps.branding import api as branding_api
     <a class="navbar-brand" href="${branding_api.get_home_url()}" itemprop="url">
       <img class="logo-image" src="${static.url("images/logo.png")}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}" itemprop="logo" />
     </a>
-    <div class="brand-title"><p>Уральский межрегиональный научно-образовательный центр мирового уровня</p></div>
+    % if course and not disable_courseware_header:
+      <div class="brand-title"><p>Уральский межрегиональный научно-образовательный центр мирового уровня</p></div>
+    % endif
   </div>
   % if course and not disable_courseware_header:
     <div class="course-header">
