@@ -49,6 +49,23 @@
   padding: 0 24px;
   margin: 0 auto;
 
+  .secondary {
+    display: flex;
+    align-items: center;
+
+    .nav-item-dropdown {
+      margin-left: .5rem;
+    }
+
+    .nav-item a {
+      font-size: 14px;
+    }
+
+    .user-image-frame {
+      height: 30px;
+    }
+  }
+
   .nav-item {
     padding: 12px 16px;
     font-weight: 500;
