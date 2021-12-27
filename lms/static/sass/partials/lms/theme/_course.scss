@@ -24,8 +24,8 @@
 
 .find-courses .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item,
 .university-profile .courses-container .courses.no-course-discovery .courses-listing .courses-listing-item {
-  width: 30%;
   max-height: 680px;
+  width: 30%;
 }
 
 .courses-container .courses .course .course-image .cover-image {
@@ -38,17 +38,17 @@
 }
 
 .courses-container .courses .course .course-image .cover-image .learn-more {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 16px;
+  background: $white;
   border: 2px solid $umnoc-border-color;
   border-radius: 2rem;
-  background: $white;
+  bottom: 16px;
+  box-sizing: border-box;
   color: $umnoc-blue;
+  font-weight: 600;
   line-height: 50px;
+  padding: 0 1.5em;
+  position: absolute;
   right: 16px;
   text-align: center;
   text-transform: none;
-  font-weight: 600;
-  padding: 0 1.5em;
 }

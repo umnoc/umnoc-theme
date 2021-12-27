@@ -14,51 +14,50 @@ html {
 }
 
 .wrapper-header {
-  background: $white;
-  border-bottom: 1px solid $umnoc-border-color;
-  box-shadow: 0 2px 2px 0 transparentize($umnoc-blue, .2);
-  padding: .5rem 0;
   position: relative;
   width: 100%;
+  padding: .5rem 0;
+  box-shadow: 0 2px 2px 0 transparentize($umnoc-blue, .2);
+  background: $white;
+  border-bottom: 1px solid $umnoc-border-color;
 }
 
 .wrapper.wrapper-view {
-  background: url('/static/studio/umnoc-theme/images/umnoc-bg-circles.svg') no-repeat;
-  background-position: bottom;
-  background-position-x: 0;
-  background-position-y: 0;
-  background-size: 100% auto;
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: url('/static/studio/umnoc-theme/images/umnoc-bg-circles.svg') no-repeat bottom;
+  background-size: 100% auto;
+  background-position-x: 0;
+  background-position-y: 0;
 }
 
 .wrapper-mast .mast {
-  border-bottom: 0 !important;
   padding-bottom: 0 !important;
+  border-bottom: 0 !important;
 }
 
 .button.new-button,
 .action-create-library,
 .button,
 .new-button {
+  padding: .8rem 1.4rem !important;
   background: $umnoc-blue !important;
   border-color: $umnoc-border-color !important;
-  font-weight: 600 !important;
+  border-radius: 2rem !important;
   color: $white !important;
   font-size: 1.4rem !important;
-  border-radius: 2rem !important;
-  padding: .8rem 1.4rem !important;
+  font-weight: 600 !important;
 
   &:hover {
     background-color: $white !important;
-    color: $umnoc-blue !important;
     border: 2px solid $umnoc-border-color !important;
+    color: $umnoc-blue !important;
   }
 }
 
 .notice-instruction {
-  background-color: white;
+  background-color: $white;
 }
 
 .xblock-visibility_view .is-not-configured, .view-outline .content-primary .no-content, .view-static-pages .content-primary .add-pages,
@@ -67,18 +66,18 @@ html {
 .view-group-configurations .content-primary .no-content,
 .view-certificates .content-primary .no-content, .ui-loading, .notice-incontext,
 .view-uploads .no-asset-content,
-.view-import .wrapper-file-name, .view-group-configurations .content-primary .notice-moduledisabled,
-.view-certificates .content-primary .notice-moduledisabled {
-  border: 1px dashed rgb(247, 148, 29);
+.view-import .wrapper-file-name, .view-group-configurations .content-primary .notice-module .disabled,
+.view-certificates .content-primary .notice-module .disabled {
   padding: 15px 20px;
-  box-shadow: 2px 1px 5px 0px rgba(49, 39, 131, 0.2);
+  box-shadow: 2px 1px 5px 0 $umnoc-border-color;
+  border: 1px dashed $umnoc-grad-2;
 }
 
 .nav-account .title {
-  background: transparent;
-  color: $gray-900;
   padding: 5px 10px;
+  background: transparent;
   border: 0;
+  color: $gray-900;
   text-align: center;
 }
 
