@@ -3,31 +3,42 @@
 }
 
 .dashboard {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+
   article.course {
     border: 2px solid $umnoc-border-color;
     border-radius: .7rem;
     padding: 1.5rem;
   }
 
-  .main-container .my-courses .course .details {
-    .enter-course {
-      background-color: $white;
-      border-radius: .3rem;
-      color: $umnoc-blue;
+  .main-container {
+    padding: unset;
 
-      &:hover {
-        background-color: $umnoc-blue;
-        color: $white;
+    .my-courses .course .details {
+
+      .enter-course {
+        background-color: $white;
+        border-radius: .3rem;
+        color: $umnoc-blue;
+
+        &:hover {
+          background-color: $umnoc-blue;
+          color: $white;
+        }
       }
-    }
 
-    .wrapper-course-image {
-      max-height: 180px;
-      width: 25%;
+      .wrapper-course-image {
+        max-height: 180px;
+        width: 25%;
 
-      .course-image {
-        height: 180px;
-        width: auto !important;
+        .course-image {
+          height: 180px;
+          width: auto !important;
+        }
       }
     }
   }
