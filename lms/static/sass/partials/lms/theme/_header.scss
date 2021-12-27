@@ -6,16 +6,24 @@
   padding: 0 24px;
 
   .main-header {
-    margin: 0 auto;
     max-width: 1920px;
   }
 
   .header-logo {
-    display: flex;
     align-items: center;
+    display: flex;
 
     a {
-    margin: unset;
+      margin: unset;
+    }
+
+    .logo-extra-text {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      color: $primary;
+      margin: 16px;
     }
   }
 
