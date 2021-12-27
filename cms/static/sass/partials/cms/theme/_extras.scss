@@ -15,7 +15,7 @@ html {
 
 .wrapper-header {
   background: $white;
-  border-bottom: 1px solid $umnoc-blue;
+  border-bottom: 1px solid $umnoc-border-color;
   box-shadow: 0 2px 2px 0 transparentize($umnoc-blue, .2);
   padding: .5rem 0;
   position: relative;
@@ -43,7 +43,7 @@ html {
 .button,
 .new-button {
   background: $umnoc-blue !important;
-  border-color: $umnoc-blue !important;
+  border-color: $umnoc-border-color !important;
   font-weight: 600 !important;
   color: $white !important;
   font-size: 1.4rem !important;
@@ -53,7 +53,7 @@ html {
   &:hover {
     background-color: $white !important;
     color: $umnoc-blue !important;
-    border: 2px solid $umnoc-blue !important;
+    border: 2px solid $umnoc-border-color !important;
   }
 }
 
@@ -92,7 +92,7 @@ html {
 
 .list-courses {
   background: $white;
-  border: 2px solid $umnoc-blue;
+  border: 2px solid $umnoc-border-color;
   border-radius: .3rem;
 
   .course-item {

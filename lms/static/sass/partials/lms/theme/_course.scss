@@ -1,5 +1,5 @@
 .courses-container .courses .course {
-  border-bottom: 4px solid $umnoc-blue;
+  border-bottom: 4px solid $umnoc-border-color;
   box-sizing: border-box;
   position: relative;
 
@@ -41,7 +41,7 @@
   box-sizing: border-box;
   position: absolute;
   bottom: 16px;
-  border: 2px solid $umnoc-blue;
+  border: 2px solid $umnoc-border-color;
   border-radius: 2rem;
   background: $white;
   color: $umnoc-blue;
