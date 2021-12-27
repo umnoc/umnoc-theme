@@ -8,4 +8,25 @@
     border-radius: .7rem;
     padding: 1.5rem;
   }
+
+  .main-container .my-courses .course .details {
+    .enter-course {
+      background-color: $white;
+      border-radius: .3rem;
+      color: $umnoc-blue;
+
+      &:hover {
+        background-color: $umnoc-blue;
+        color: $white;
+      }
+    }
+
+    .wrapper-course-image {
+      width: 15%;
+
+      .course-image {
+        height: 150px;
+      }
+    }
+  }
 }
