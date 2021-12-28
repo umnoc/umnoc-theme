@@ -1,5 +1,6 @@
 .global-header {
   align-items: center;
+  border-bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   display: flex;
   flex-direction: row;
@@ -25,11 +26,11 @@
     }
 
     .logo-extra-text {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.00938em;
       color: $primary;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.00938em;
+      line-height: 1.5;
       margin: 16px;
     }
   }
@@ -45,21 +46,21 @@
   display: flex;
   flex-direction: row;
   justify-content: initial;
+  margin: 0 auto;
   max-width: 1920px;
   padding: 0 24px;
-  margin: 0 auto;
 
   .secondary {
-    display: flex;
     align-items: center;
+    display: flex;
 
     .nav-item-dropdown {
       margin-left: .5rem;
     }
 
     .nav-item a {
-      font-size: 14px;
       color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
     }
 
     .user-image-frame {
@@ -68,16 +69,16 @@
   }
 
   .nav-item {
-    padding: 12px 16px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.25;
-    text-align: center;
-    flex-direction: column;
-    min-height: 48px;
-    text-transform: uppercase;
-    justify-content: center;
     display: inline-flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 48px;
+    padding: 12px 16px;
+    text-align: center;
+    text-transform: uppercase;
 
     a {
       color: rgba(0, 0, 0, 0.6);
