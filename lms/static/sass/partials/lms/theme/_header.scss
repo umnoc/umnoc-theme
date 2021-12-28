@@ -44,11 +44,12 @@
 .nav-links {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: initial;
+  justify-content: space-between;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1200px;
   padding: 0 24px;
+  width: 100%;
+
 
   .secondary {
     align-items: center;
