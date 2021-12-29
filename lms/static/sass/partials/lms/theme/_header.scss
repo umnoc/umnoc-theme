@@ -56,7 +56,9 @@
     display: flex;
 
     .nav-item-dropdown {
-      margin-left: .5rem;
+      span.fa-caret-down {
+        vertical-align: text-top;
+      }
     }
 
     .nav-item a {
