@@ -65,6 +65,15 @@
 
 
     .nav-item-dropdown {
+      .toggle-user-dropdown {
+        cursor: pointer;
+        padding: 8px;
+
+        &:hover {
+          color: $umnoc-logo-text-color;
+        }
+      }
+
       span.fa-caret-down {
         vertical-align: text-top;
       }
@@ -109,6 +118,10 @@
         color: rgb(63, 81, 181);
       }
 
+      &.menu-title {
+        padding-right: 8px;
+      }
+
     }
 
     .menu-title {
@@ -127,9 +140,18 @@
     z-index: 1000;
 
     a {
-      text-align: left;
+      align-items: start;
       width: 100%;
 
+      &:hover {
+        background-color: rgba(63, 81, 181, 0.04);
+        border: 1px solid $umnoc-logo-text-color;
+
+      }
+    }
+
+    .dropdown-nav-item {
+      box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 1px -3px;
     }
   }
 
