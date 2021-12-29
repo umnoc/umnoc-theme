@@ -132,7 +132,7 @@
   #user-menu {
     background-color: $white;
     border-radius: .3rem;
-    box-shadow: $menu-shadow;
+    box-shadow: rgba(0,0,0,0.2) 1px 2px 2px 0,rgba(0,0,0,0.14) 2px 3px 5px 0,rgba(0,0,0,0.12) -1px 0 12px 0;
     margin: .125rem 0 0;
     min-width: 16rem;
     position: absolute;
@@ -151,7 +151,7 @@
     }
 
     .dropdown-nav-item {
-      box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 1px -3px;
+      box-shadow: rgba(0,0,0,0.2) 5px 5px 7px -5px, rgba(0,0,0,0.2) 1px 1px 1px 0;
     }
   }
 
