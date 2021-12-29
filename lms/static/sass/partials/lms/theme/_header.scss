@@ -1,7 +1,7 @@
 .global-header {
   align-items: center;
   border-bottom: 0;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  box-shadow: $menu-shadow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +29,7 @@
       color: $umnoc-logo-text-color;
       font-size: 16px;
       font-weight: 400;
-      letter-spacing: 0.00938em;
+      letter-spacing: .00938em;
       line-height: 1.5;
       margin: 16px;
     }
@@ -70,6 +70,7 @@
       }
     }
 
+
     .user-image-frame {
       height: 30px;
     }
@@ -89,7 +90,7 @@
       font-size: 14px;
       font-weight: 500;
       justify-content: center;
-      letter-spacing: 0.02857em;
+      letter-spacing: .02857em;
       line-height: 1.25;
       margin: 0;
       max-width: 360px;
@@ -107,6 +108,23 @@
 
     .menu-title {
       display: inline-block;
+    }
+  }
+
+  .user-menu {
+    background-color: $white;
+    border-radius: .3rem;
+    box-shadow: $menu-shadow;
+    margin: .125rem 0 0;
+    min-width: 16rem;
+    position: absolute;
+    transform: translate(-50%, 1vw);
+    z-index: 1000;
+
+    a {
+      text-align: left;
+      width: 100%;
+
     }
   }
 
