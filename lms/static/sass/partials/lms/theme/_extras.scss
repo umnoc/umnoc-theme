@@ -22,7 +22,7 @@
 }
 
 .umnoc-pink {
-  color: $umnoc-pink;
+  color: $secondary;
 }
 
 .window-wrap {
@@ -47,53 +47,53 @@
 .btn-primary {
   &:hover {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color: $primary;
   }
 
   &.is-hovered {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color: $primary;
   }
 
   &:focus {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color: $primary;
   }
 
   &.is-focused {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color: $primary;
   }
 }
 
 .btn-brand {
   &:hover {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color: $primary;
   }
 
   &:focus {
     background-color: $white;
-    border-color: $white;
-    color: $umnoc-blue;
+    border-color: $primary;
+    color:$primary;
   }
 }
 
 .is-hovered.btn-brand {
   background-color: $white;
-  border-color: $white;
-  color: $umnoc-blue;
+  border-color: $primary;
+  color: $primary;
 }
 
 .is-focused.btn-brand {
   background-color: $white;
   border-color: $white;
-  color: $umnoc-blue;
+  color: $primary;
 }
 
 .wrapper-header-courses {
@@ -106,7 +106,7 @@
 
 .main-container .my-courses .course .details {
   .enter-course {
-    background-color: $umnoc-blue;
+    background-color: $primary;
     border-radius: .3rem;
     color: $white;
   }
@@ -116,7 +116,7 @@
 .wrapper-messages-primary {
   .message.message-upsell {
     .action-view-consent {
-      background-color: $umnoc-blue;
+      background-color: $primary;
       border-radius: .3rem;
       color: $white;
     }
@@ -152,15 +152,15 @@
 
       &:hover {
         .nav-link {
-          border-bottom-color: $umnoc-menu-border-color;
+          border-bottom-color: $primary;
         }
       }
     }
 
     .nav-item.active {
       .nav-link {
-        border-bottom-color: $umnoc-menu-border-color;
-        color: $umnoc-blue;
+        border-bottom-color: $primary;
+        color: $primary;
       }
     }
   }
@@ -177,7 +177,7 @@
 }
 
 .course-sidebar .section h3 {
-  color: $umnoc-pink;
+  color: $secondary;
 }
 
 .wrapper-msg.wrapper-auto-cert {
@@ -217,15 +217,15 @@ a:visited:not(.btn) {
 
   &:hover,
   &:focus {
-    color: $umnoc-blue;
+    color: $primary;
   }
 }
 
 .btn-primary {
   &:hover,
   &:focus {
-    color: $umnoc-blue;
+    color: $primary;
     background-color: $white;
-    border: 1px solid $umnoc-blue;
+    border: 1px solid $primary;
   }
  }

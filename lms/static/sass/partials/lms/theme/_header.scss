@@ -26,7 +26,7 @@
     }
 
     .logo-extra-text {
-      color: $umnoc-logo-text-color;
+      color: $primary;
       align-self: center;
       font-size: 16px;
       font-weight: 400;
@@ -73,7 +73,7 @@
         padding: 8px;
 
         &:hover {
-          color: $umnoc-logo-text-color;
+          color: $primary;
         }
       }
 
@@ -148,8 +148,8 @@
 
       &:hover {
         background-color: rgba(63, 81, 181, 0.04);
-        border: 1px solid $umnoc-logo-text-color;
-        color: $umnoc-blue;
+        border: 1px dotted $primary;
+        color: $primary;
         text-decoration: none;
       }
     }
@@ -167,7 +167,7 @@
     font-weight: 400;
 
     &:hover {
-      color: $umnoc-pink;
+      color: $secondary;
     }
   }
 }

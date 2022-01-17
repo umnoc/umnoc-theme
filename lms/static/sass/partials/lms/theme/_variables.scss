@@ -51,9 +51,8 @@ $umnoc-grad-2: rgba(247, 148, 29, 1);
 
 $umnoc-background-yellow: linear-gradient(215deg, $umnoc-grad-1 0%, $umnoc-grad-2 100%);
 $umnoc-border-color: $umnoc-blue;
-$umnoc-logo-text-color: #3f51b5;
+$umnoc-logo-text-color: $umnoc-blue;
 $menu-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0, rgba(0, 0, 0, 0.12) 0 1px 5px 0;
-$primary: $umnoc-blue;
 
 $blue: $umnoc-blue !default;
 $dark-blue: #306980 !default;
@@ -103,7 +102,7 @@ $colors: map-merge(
                 $colors
 );
 
-$primary: $blue !default;
+$primary: $umnoc-blue !default;
 $secondary: $umnoc-pink !default;
 $success: $green !default;
 $info: $dark-blue !default;
@@ -118,6 +117,8 @@ $program-micro-masters: $dark-blue !default;
 $program-prof-cert: $magenta !default;
 $light: $gray-100 !default;
 $dark: rgba(0, 0, 0, 0.6) !default;
+
+$honor-mode-color: $primary !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
