@@ -147,13 +147,12 @@
 
     .nav-item {
       .nav-link {
-        border-bottom: 6px solid transparent;
+        border-bottom: 3px solid transparent;
       }
 
       &:hover {
         .nav-link {
           border-bottom-color: $umnoc-menu-border-color;
-          color: $umnoc-pink;
         }
       }
     }
@@ -161,7 +160,7 @@
     .nav-item.active {
       .nav-link {
         border-bottom-color: $umnoc-menu-border-color;
-        color: $umnoc-pink;
+        color: $umnoc-blue;
       }
     }
   }
@@ -194,10 +193,16 @@
     border-left: 0;
     padding: 1vw;
 
-    .msg-content .title {
-      font-size: 150%;
-      font-weight: 600;
-      text-shadow: 1px 1px 1px $umnoc-rusty;
+    .msg-content {
+      .title {
+        color: $gray-900;
+        font-size: 150%;
+        font-weight: 600;
+      }
+
+      .copy {
+        color: $gray-900;
+      }
     }
   }
 }
@@ -209,6 +214,7 @@
 a:not(.btn),
 a:visited:not(.btn) {
   font-weight: 400;
+
   &:hover,
   &:focus {
     color: $umnoc-blue;
