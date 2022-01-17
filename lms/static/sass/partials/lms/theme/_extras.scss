@@ -233,6 +233,12 @@
   .action-preview-label {
     color: $primary !important;
   }
+  .action-preview-select {
+    background-color: rgba(0,0,0,.0);
+    border: 1px solid $primary;
+    color: $primary;
+    padding: .5rem;
+  }
 }
 
 a:not(.btn),
@@ -272,15 +278,4 @@ a:visited:not(.btn) {
 .page-header-secondary {
   width: 100%;
   justify-content: end;
-}
-
-#main-menu {
-  .secondary {
-    &:first-child {
-      font-size: 1rem;
-      display: inline-block;
-      padding: 14px 0 0;
-      margin: 0 1rem;
-    }
-  }
 }

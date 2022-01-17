@@ -9,7 +9,7 @@
   padding: 0 24px 0 24px;
 
   .main-header {
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .header-logo {
@@ -82,9 +82,15 @@
       }
     }
 
-
     .user-image-frame {
       height: 30px;
+    }
+
+    &:first-child {
+      font-size: 1rem;
+      display: inline-block;
+      padding: 14px 0 0;
+      margin: 0 1rem;
     }
   }
 
@@ -93,12 +99,12 @@
     a {
       align-items: center;
       box-sizing: border-box;
-      color: rgba(0, 0, 0, 0.6);
+      color: $dark;
       cursor: pointer;
       display: inline-flex;
       flex-direction: column;
       flex-shrink: 0;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-family: $font-family-sans-serif;
       font-size: 14px;
       font-weight: 500;
       justify-content: center;
@@ -118,7 +124,7 @@
 
       &.active {
         border-bottom: 2px solid;
-        color: rgb(63, 81, 181);
+        color: $primary;
       }
 
       &.menu-title {
@@ -147,7 +153,7 @@
       width: 100%;
 
       &:hover {
-        background-color: rgba(63, 81, 181, 0.04);
+        background-color: transparentize($primary, .05);
         border: 1px dotted $primary;
         color: $primary;
         text-decoration: none;
@@ -160,6 +166,10 @@
 
     .dropdown-nav-item {
       box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 7px -5px, rgba(0, 0, 0, 0.2) 1px 1px 1px 0;
+
+      a {
+        padding: 0 1rem;
+      }
     }
   }
 
