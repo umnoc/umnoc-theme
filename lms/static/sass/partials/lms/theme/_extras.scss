@@ -125,15 +125,15 @@
 
 .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
   background-color: $white;
-  border-color: $white;
-  color: $umnoc-border-color;
+  border-color: $primary;
+  color: $primary;
 }
 
 
 .btn-secondary:hover {
   background-color: $white;
-  border: 1px solid $umnoc-border-color;
-  color: $umnoc-blue;
+  border: 1px solid $secondary;
+  color: $secondary;
 }
 
 .content-wrapper {
@@ -221,3 +221,11 @@ a:visited:not(.btn) {
   }
 }
 
+.btn-primary {
+  &:hover,
+  &:focus {
+    color: $umnoc-blue;
+    background-color: $white;
+    border: 1px solid $umnoc-blue;
+  }
+ }
