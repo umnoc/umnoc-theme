@@ -145,7 +145,7 @@ $theme-colors: map-merge(
 $footer-bg: $umnoc-blue;
 $serif: 'Roboto', sans-serif;
 $font-family-sans-serif: 'Roboto', sans-serif;
-$uxpl-pink-base: $umnoc-pink !default;
+$uxpl-pink-base: darken($umnoc-pink, .2) !default;
 
 .hidden {
   display: none !important;

@@ -233,17 +233,15 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  background: $gray-300;
 
   .action-preview-label {
-    color: $primary !important;
+    color: $white;
   }
   .action-preview-select {
-    background-color: $white;
-    border: 1px solid $primary;
-    border-radius: 3px;
-    color: $primary;
-    padding: .5rem;
+    background-color: $primary;
+    border: 1px solid white;
+    color: $white;
+    padding: .3rem;
   }
 }
 
