@@ -23,7 +23,6 @@ $gray-900: #111 !default;
 $black: #000 !default;
 
 
-
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge(
@@ -144,5 +143,10 @@ $theme-colors: map-merge(
 $footer-bg: $umnoc-blue;
 $serif: 'Roboto', sans-serif;
 $font-family-sans-serif: 'Roboto', sans-serif;
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
 
 @import 'edx-bootstrap/sass/open-edx/theme';
