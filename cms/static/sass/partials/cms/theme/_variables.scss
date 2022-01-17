@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
 $white: #fff !default;
 $gray-100: #f5f5f5 !default;
@@ -12,12 +12,11 @@ $gray-800: #313131 !default;
 $gray-900: #111 !default;
 $black: #000 !default;
 
-$umnoc-blue: #312783 !default;
-$umnoc-pink: #e6007e !default;
+$umnoc-blue: #3F51B5 !default;
+$umnoc-pink: #F50057 !default;
 $umnoc-menu-border-color: #e1dfef !default;
 $umnoc-bg: #b3d4fc !default;
 $umnoc-rusty: #c15333 !default;
-$umnoc-border-color: rgba(49, 39, 131, 0.5);
 
 $umnoc-grad-1: rgba(255, 221, 0, 1);
 $umnoc-grad-2: rgba(247, 148, 29, 1);
@@ -25,7 +24,7 @@ $umnoc-grad-2: rgba(247, 148, 29, 1);
 $primary: $umnoc-blue;
 
 $blue: $umnoc-blue !default;
-$dark-blue: #306980 !default;
+$dark-blue: darken($blue, 10%) !default;
 $indigo: #662483 !default;
 $red: #ed1651 !default;
 $yellow: #fd0 !default;
@@ -37,9 +36,9 @@ $umnoc-background-yellow: linear-gradient(215deg, $umnoc-grad-1 0%, $umnoc-grad-
 
 
 $body-bg: $umnoc-bg !default;
-$footer-bg: $umnoc-blue !default;
+$footer-bg: $umnoc-blue;
 
-$serif: 'Montserrat', sans-serif;
-$font-family-sans-serif: 'Montserrat', sans-serif;
+$serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
 
 @import 'edx-bootstrap/sass/open-edx/theme';

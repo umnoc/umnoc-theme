@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: map-get($container-max-widths, xl);
+    max-width: map-get($container-max-widths, lg);
 
 
     .site-nav {
