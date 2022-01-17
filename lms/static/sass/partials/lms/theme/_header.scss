@@ -149,7 +149,8 @@
       &:hover {
         background-color: rgba(63, 81, 181, 0.04);
         border: 1px solid $umnoc-logo-text-color;
-
+        color: $umnoc-blue;
+        text-decoration: none;
       }
     }
 
