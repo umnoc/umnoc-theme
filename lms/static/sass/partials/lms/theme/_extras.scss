@@ -211,19 +211,20 @@
 
   .auto-cert-message {
 
-    background: $umnoc-background-yellow;
-    border-left: 0;
-    padding: 1vw;
-
+    background: $white;
+    border: 2px solid $primary;
+    padding: 24px 21px;
+    border-radius: 4px;
     .msg-content {
       .title {
-        color: $gray-900;
+        color: $primary;
         font-size: 150%;
-        font-weight: 600;
+        text-align: left;
+        text-transform: uppercase;
       }
 
       .copy {
-        color: $gray-900;
+        color: $primary;
       }
     }
   }
@@ -285,8 +286,9 @@ a:visited:not(.btn) {
 }
 
 .btn-outline-primary {
-  border: 1px solid $primary;
+  border: 1px solid $white;
   padding: .5rem;
   border-radius: 3px;
-  background-color: $white;
+  background-color: $primary;
+  color: $white;
 }
