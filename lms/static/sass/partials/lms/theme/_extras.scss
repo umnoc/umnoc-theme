@@ -230,15 +230,18 @@
 }
 
 .wrapper-preview-menu {
-  margin: unset !important;
-  background: $umnoc-background-yellow;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  background: $gray-300;
 
   .action-preview-label {
     color: $primary !important;
   }
   .action-preview-select {
-    background-color: rgba(0,0,0,.0);
+    background-color: $white;
     border: 1px solid $primary;
+    border-radius: 3px;
     color: $primary;
     padding: .5rem;
   }
@@ -281,4 +284,11 @@ a:visited:not(.btn) {
 .page-header-secondary {
   width: 100%;
   justify-content: end;
+}
+
+.btn-outline-primary {
+  border: 1px solid $primary;
+  padding: .5rem;
+  border-radius: 3px;
+  background-color: $white;
 }

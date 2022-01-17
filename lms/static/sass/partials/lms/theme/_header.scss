@@ -152,9 +152,9 @@
       width: 100%;
 
       &:hover {
-        background-color: transparentize($primary, .05);
+        background-color: transparentize($primary, .95);
         border: 1px dotted $primary;
-        color: $primary;
+        color: saturate($primary, 20%);
         text-decoration: none;
       }
     }
