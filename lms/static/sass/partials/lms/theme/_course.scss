@@ -52,3 +52,8 @@
   text-align: center;
   text-transform: none;
 }
+
+a:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h4:not(.btn), div.info-wrapper section.handouts ol li div.hitarea:focus + h4:not(.btn), a:not(.btn):focus, a:visited:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited:not(.btn), div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited:not(.btn), a:visited:not(.btn):focus {
+  color: $umnoc-blue;
+  text-decoration: underline;
+}

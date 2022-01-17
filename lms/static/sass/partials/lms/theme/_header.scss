@@ -138,7 +138,7 @@
     margin: .125rem 0 0;
     min-width: 16rem;
     position: absolute;
-    transform: translate(-50%, 1vw);
+    transform: translate(-50%, 0vw);
     z-index: 1000;
 
     a {
@@ -150,6 +150,10 @@
         border: 1px solid $umnoc-logo-text-color;
 
       }
+    }
+
+    .dropdown-item {
+      padding: unset;
     }
 
     .dropdown-nav-item {
