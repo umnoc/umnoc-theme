@@ -64,9 +64,16 @@
     display: flex;
     //padding: 0 24px;
 
+    &:first-child {
+      font-size: 1rem;
+      display: inline-block;
+      padding: 14px 0 0;
+      margin: 0 1rem;
+    }
+
 
     .nav-item-dropdown {
-      position: absolute;
+      //position: absolute;
 
       .toggle-user-dropdown {
         cursor: pointer;
@@ -86,12 +93,7 @@
       height: 30px;
     }
 
-    &:first-child {
-      font-size: 1rem;
-      display: inline-block;
-      padding: 14px 0 0;
-      margin: 0 1rem;
-    }
+
   }
 
   .nav-item {
@@ -112,9 +114,7 @@
       line-height: 1.25;
       margin: 0;
       max-width: 360px;
-      min-height: 48px;
       min-width: 90px;
-      //padding: 12px 16px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -130,7 +130,6 @@
       &.menu-title {
         padding-right: 8px;
       }
-
     }
 
     .menu-title {
@@ -169,6 +168,7 @@
 
       a {
         padding: 0 1rem;
+        min-height: 48px;
       }
     }
   }

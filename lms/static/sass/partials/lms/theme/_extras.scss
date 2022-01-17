@@ -5,17 +5,14 @@
 @import 'footer';
 @import 'variables';
 @import 'header';
-//@import 'course';
+@import 'course';
 
 
 // Ensure the header matches the edx.org marketing site header
 .header-logo a {
   @include media-breakpoint-down(md) {
-    margin-left: calc(50% - 30px) !important;
-
     .logo {
-      width: $header-logo-width;
-      height: auto !important;
+      height: 40px !important;
       margin-left: 0;
     }
   }
