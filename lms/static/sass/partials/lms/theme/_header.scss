@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   min-height: 64px;
-  padding: 0 24px;
+  padding: 0 24px 0 24px;
 
   .main-header {
     max-width: 1920px;
@@ -14,24 +14,27 @@
 
   .header-logo {
     align-items: center;
-    display: flex;
+    display: inline-flex;
+    margin: 6px 0 0 16px;
 
     a {
       margin: unset;
 
-      .logo {
-        margin-left: 16px;
-        margin-top: 6px;
-      }
+      //.logo {
+        //margin-left: 16px;
+        //margin-top: 6px;
+        //margin-right: 16px;
+      //}
     }
 
     .logo-extra-text {
       color: $umnoc-logo-text-color;
+      align-self: center;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: .00938em;
       line-height: 1.5;
-      margin: 16px;
+      margin: 0 16px;
     }
   }
 
