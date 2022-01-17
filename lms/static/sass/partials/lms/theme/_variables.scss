@@ -40,8 +40,8 @@ $grays: map-merge(
                 $grays
 );
 
-$umnoc-blue: #312783 !default;
-$umnoc-pink: #e6007e !default;
+$umnoc-blue: #3F51B5 !default; //#312783
+$umnoc-pink: #F50057 !default;
 $umnoc-menu-border-color: #e1dfef !default;
 $umnoc-bg: #b3d4fc !default;
 $umnoc-rusty: #c15333 !default;
@@ -117,7 +117,7 @@ $program-masters: $slate !default;
 $program-micro-masters: $dark-blue !default;
 $program-prof-cert: $magenta !default;
 $light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: rgba(0, 0, 0, 0.6) !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -149,6 +149,6 @@ $font-family-sans-serif: 'Roboto', sans-serif;
   visibility: hidden;
 }
 
-$link-hover: lighten($umnoc-blue, 5%) !default;
+$link-hover: $umnoc-blue !default;
 
 @import 'edx-bootstrap/sass/open-edx/theme';
