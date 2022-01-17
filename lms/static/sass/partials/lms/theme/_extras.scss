@@ -25,6 +25,20 @@
   color: $secondary;
 }
 
+.hd-1, .hd-2, .hd-3, .hd-4, .hd-5, .hd-6, .hd-7, .hd-8,
+.date-wrapper .date-title{
+  color: $secondary;
+}
+
+.date-wrapper .date-circle.todays-date {
+  background-color: $secondary;
+}
+
+.date-wrapper .pill.today {
+  background-color: $primary;
+  color: $white;
+}
+
 .window-wrap {
   display: flex;
   flex-direction: column;
@@ -142,12 +156,13 @@
 
   .course-tabs {
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1200px;
     overflow-x: auto;
 
     .nav-item {
       .nav-link {
         border-bottom: 3px solid transparent;
+        color: $dark;
       }
 
       &:hover {
@@ -175,7 +190,9 @@
     }
   }
 }
-
+.course-sidebar {
+  display: none;
+}
 .course-sidebar .section h3 {
   color: $secondary;
 }
@@ -209,6 +226,11 @@
 
 .wrapper-preview-menu {
   margin: unset !important;
+  background: $umnoc-background-yellow;
+
+  preview-actions .action-preview .action-preview-label {
+    color: $gray-900;
+  }
 }
 
 a:not(.btn),
@@ -229,3 +251,13 @@ a:visited:not(.btn) {
     border: 1px solid $primary;
   }
  }
+
+.page-content-container {
+  max-width: 1200px;
+}
+
+.course-message .message-author {
+  border: 1px solid $dark;
+
+
+}
