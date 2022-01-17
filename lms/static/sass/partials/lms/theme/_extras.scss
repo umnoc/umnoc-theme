@@ -26,7 +26,7 @@
 }
 
 .hd-1, .hd-2, .hd-3, .hd-4, .hd-5, .hd-6, .hd-7, .hd-8,
-.date-wrapper .date-title{
+.date-wrapper .date-title {
   color: $secondary;
 }
 
@@ -94,7 +94,7 @@
   &:focus {
     background-color: $white;
     border-color: $primary;
-    color:$primary;
+    color: $primary;
   }
 }
 
@@ -190,9 +190,11 @@
     }
   }
 }
+
 .course-sidebar {
   display: none;
 }
+
 .course-sidebar .section h3 {
   color: $secondary;
 }
@@ -228,8 +230,8 @@
   margin: unset !important;
   background: $umnoc-background-yellow;
 
-  preview-actions .action-preview .action-preview-label {
-    color: $gray-900;
+  .action-preview-label {
+    color: $primary !important;
   }
 }
 
@@ -250,14 +252,35 @@ a:visited:not(.btn) {
     background-color: $white;
     border: 1px solid $primary;
   }
- }
+}
 
 .page-content-container {
   max-width: 1200px;
 }
 
-.course-message .message-author {
-  border: 1px solid $dark;
+.course-message {
+  .message-author {
+    border: 1px solid $dark;
+  }
 
+  .message-content {
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
+  }
+}
 
+.page-header-secondary {
+  width: 100%;
+  justify-content: end;
+}
+
+#main-menu {
+  .secondary {
+    &:first-child {
+      font-size: 1rem;
+      display: inline-block;
+      padding: 14px 0 0;
+      margin: 0 1rem;
+    }
+  }
 }
