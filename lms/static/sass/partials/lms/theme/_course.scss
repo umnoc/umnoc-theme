@@ -57,3 +57,12 @@ a:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h
   color: $umnoc-blue;
   text-decoration: underline;
 }
+.global-header {
+  .header-logo {
+      display: inline-flex;
+  }
+}
+
+.global-header .header-logo .course-header .course-name {
+  display: inline;
+}
