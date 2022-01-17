@@ -18,6 +18,12 @@
   }
 }
 
+.nav-links {
+  @include media-breakpoint-down(lg) {
+    justify-content: space-around;
+  }
+}
+
 .umnoc-pink {
   color: $secondary;
 }
