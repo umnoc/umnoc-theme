@@ -69,6 +69,16 @@ a:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h
 
 .profile-wrapper {
   max-width: 1200px !important;
+
+  section.chapters {
+    h3.hd-3 {
+      font-size: 1.15em;
+    }
+    h4.hd-4 {
+      font-size: 1.15em;
+      font-weight: 400;
+    }
+  }
 }
 
 #grade-detail-graph {
