@@ -149,4 +149,6 @@ $font-family-sans-serif: 'Roboto', sans-serif;
   visibility: hidden;
 }
 
+$link-hover: lighten($umnoc-blue, 5%) !default;
+
 @import 'edx-bootstrap/sass/open-edx/theme';
