@@ -1,5 +1,5 @@
 .courses-container .courses .course {
-  border-bottom: 4px solid $umnoc-border-color;
+  border-bottom: 4px solid $primary;
   box-sizing: border-box;
   position: relative;
 
@@ -39,11 +39,11 @@
 
 .courses-container .courses .course .course-image .cover-image .learn-more {
   background: $white;
-  border: 2px solid $umnoc-border-color;
+  border: 2px solid $primary;
   border-radius: 2rem;
   bottom: 16px;
   box-sizing: border-box;
-  color: $umnoc-blue;
+  color: $primary;
   font-weight: 600;
   line-height: 50px;
   padding: 0 1.5em;
@@ -51,4 +51,36 @@
   right: 16px;
   text-align: center;
   text-transform: none;
+}
+
+a:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h4:not(.btn), div.info-wrapper section.handouts ol li div.hitarea:focus + h4:not(.btn), a:not(.btn):focus, a:visited:not(.btn):hover, div.info-wrapper section.handouts ol li div.hitarea:hover + h4:visited:not(.btn), div.info-wrapper section.handouts ol li div.hitarea:focus + h4:visited:not(.btn), a:visited:not(.btn):focus {
+  color: $primary;
+  text-decoration: underline;
+}
+.umnoc-global-header {
+  .header-logo {
+      display: inline flex;
+  }
+}
+
+.umnoc-global-header .header-logo .umnoc-course-header .course-name {
+  display: inline;
+}
+
+.profile-wrapper {
+  max-width: 1200px !important;
+
+  section.chapters {
+    h3.hd-3 {
+      font-size: 1.15em;
+    }
+    h4.hd-4 {
+      font-size: 1.15em;
+      font-weight: 400;
+    }
+  }
+}
+
+#grade-detail-graph {
+  width: 1120px;
 }

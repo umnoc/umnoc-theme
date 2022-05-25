@@ -23,7 +23,6 @@ $gray-900: #111 !default;
 $black: #000 !default;
 
 
-
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge(
@@ -41,8 +40,8 @@ $grays: map-merge(
                 $grays
 );
 
-$umnoc-blue: #312783 !default;
-$umnoc-pink: #e6007e !default;
+$umnoc-blue: #3F51B5 !default; //#312783
+$umnoc-pink: #F50057 !default;
 $umnoc-menu-border-color: #e1dfef !default;
 $umnoc-bg: #b3d4fc !default;
 $umnoc-rusty: #c15333 !default;
@@ -51,13 +50,12 @@ $umnoc-grad-1: rgba(255, 221, 0, 1);
 $umnoc-grad-2: rgba(247, 148, 29, 1);
 
 $umnoc-background-yellow: linear-gradient(215deg, $umnoc-grad-1 0%, $umnoc-grad-2 100%);
-$umnoc-border-color: rgba(49, 39, 131, 0.5);
-$umnoc-logo-text-color: #3f51b5;
+$umnoc-border-color: $umnoc-blue;
+$umnoc-logo-text-color: $umnoc-blue;
 $menu-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0 2px 2px 0, rgba(0, 0, 0, 0.12) 0 1px 5px 0;
-$primary: $umnoc-blue;
 
 $blue: $umnoc-blue !default;
-$dark-blue: #306980 !default;
+$dark-blue: darken($blue, 10%) !default;
 $indigo: #662483 !default;
 $red: #ed1651 !default;
 $yellow: #fd0 !default;
@@ -104,8 +102,8 @@ $colors: map-merge(
                 $colors
 );
 
-$primary: $blue !default;
-$secondary: $indigo !default;
+$primary: $umnoc-blue !default;
+$secondary: $umnoc-pink !default;
 $success: $green !default;
 $info: $dark-blue !default;
 $warning: $yellow !default;
@@ -118,7 +116,10 @@ $program-masters: $slate !default;
 $program-micro-masters: $dark-blue !default;
 $program-prof-cert: $magenta !default;
 $light: $gray-100 !default;
-$dark: $gray-900 !default;
+$dark: $gray-800 !default;
+
+
+$honor-mode-color: $primary !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -144,5 +145,13 @@ $theme-colors: map-merge(
 $footer-bg: $umnoc-blue;
 $serif: 'Roboto', sans-serif;
 $font-family-sans-serif: 'Roboto', sans-serif;
+$uxpl-pink-base: darken($umnoc-pink, .2) !default;
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+$link-hover: $umnoc-blue !default;
 
 @import 'edx-bootstrap/sass/open-edx/theme';

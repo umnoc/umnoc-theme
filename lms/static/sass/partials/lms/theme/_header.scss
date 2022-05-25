@@ -1,4 +1,4 @@
-.global-header {
+.umnoc-global-header {
   align-items: center;
   border-bottom: 0;
   box-shadow: $menu-shadow;
@@ -6,32 +6,33 @@
   flex-direction: row;
   justify-content: space-between;
   min-height: 64px;
-  padding: 0 24px;
+  padding: 0 24px 0 24px;
 
   .main-header {
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .header-logo {
     align-items: center;
-    display: flex;
+    display: inline-flex;
+    margin: 6px 0 0 16px;
 
     a {
       margin: unset;
 
       .logo {
-        margin-left: 16px;
-        margin-top: 6px;
+        height: 40px;
       }
     }
 
     .logo-extra-text {
-      color: $umnoc-logo-text-color;
+      color: $primary;
+      align-self: center;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: .00938em;
       line-height: 1.5;
-      margin: 16px;
+      margin: 0 16px;
     }
   }
 
@@ -48,12 +49,12 @@
   margin: 0 auto;
   max-width: 1200px;
   min-height: 64px;
-  padding: 0 24px;
+  color: $dark;
   width: 100%;
 
   .main {
     display: inline flex;
-    padding: 0 24px;
+    //padding: 0 24px;
 
   }
 
@@ -61,18 +62,25 @@
   .secondary {
     align-items: center;
     display: flex;
-    padding: 0 24px;
+    //padding: 0 24px;
+
+    &:first-child {
+      font-size: 1rem;
+      display: inline-block;
+      padding: 14px 0 0;
+      margin: 0 1rem;
+    }
 
 
     .nav-item-dropdown {
-      position: absolute;
+      //position: absolute;
 
       .toggle-user-dropdown {
         cursor: pointer;
         padding: 8px;
 
         &:hover {
-          color: $umnoc-logo-text-color;
+          color: $primary;
         }
       }
 
@@ -81,10 +89,11 @@
       }
     }
 
-
     .user-image-frame {
       height: 30px;
     }
+
+
   }
 
   .nav-item {
@@ -92,12 +101,12 @@
     a {
       align-items: center;
       box-sizing: border-box;
-      color: rgba(0, 0, 0, 0.6);
+      color: $dark;
       cursor: pointer;
       display: inline-flex;
       flex-direction: column;
       flex-shrink: 0;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-family: $font-family-sans-serif;
       font-size: 14px;
       font-weight: 500;
       justify-content: center;
@@ -105,9 +114,7 @@
       line-height: 1.25;
       margin: 0;
       max-width: 360px;
-      min-height: 48px;
       min-width: 90px;
-      padding: 12px 16px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -117,13 +124,12 @@
 
       &.active {
         border-bottom: 2px solid;
-        color: rgb(63, 81, 181);
+        color: $primary;
       }
 
       &.menu-title {
         padding-right: 8px;
       }
-
     }
 
     .menu-title {
@@ -138,7 +144,7 @@
     margin: .125rem 0 0;
     min-width: 16rem;
     position: absolute;
-    transform: translate(-50%, 1vw);
+    transform: translate(-50%, 0vw);
     z-index: 1000;
 
     a {
@@ -146,14 +152,24 @@
       width: 100%;
 
       &:hover {
-        background-color: rgba(63, 81, 181, 0.04);
-        border: 1px solid $umnoc-logo-text-color;
-
+        background-color: transparentize($primary, .95);
+        border: 1px dotted $primary;
+        color: saturate($primary, 20%);
+        text-decoration: none;
       }
+    }
+
+    .dropdown-item {
+      padding: unset;
     }
 
     .dropdown-nav-item {
       box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 7px -5px, rgba(0, 0, 0, 0.2) 1px 1px 1px 0;
+
+      a {
+        padding: 0 1rem;
+        min-height: 48px;
+      }
     }
   }
 
@@ -161,7 +177,7 @@
     font-weight: 400;
 
     &:hover {
-      color: $umnoc-pink;
+      color: $secondary;
     }
   }
 }

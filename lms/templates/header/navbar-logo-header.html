@@ -35,9 +35,8 @@ enterprise_customer_link = get_enterprise_learner_portal(request)
   <p class="logo-extra-text">${settings.LOGO_IMAGE_EXTRA_TEXT}</p>
   % endif
   % if course:
-    <div class="course-header">
-      <span class="provider">${course.display_org_with_default}:</span>
-      <span class="course-number">${course.display_number_with_default}</span>
+    <div class="umnoc-course-header">
+      <span class="course-number hidden">${course.display_number_with_default}</span>
       <%
       display_name = course.display_name_with_default
       if settings.FEATURES.get('CUSTOM_COURSES_EDX', False):
@@ -46,6 +45,7 @@ enterprise_customer_link = get_enterprise_learner_portal(request)
           display_name = ccx.display_name
       %>
       <span class="course-name">${display_name}</span>
+      (<span class="provider">${course.display_org_with_default}</span>)
     </div>
   % endif
 </div>

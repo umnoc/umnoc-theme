@@ -23,9 +23,9 @@ $(document).ready(function() {
     var $hamburgerMenu;
     var $mobileMenu;
     // Toggling visibility for the user dropdown
-    $('.global-header + .nav-links .toggle-user-dropdown, .global-header + .nav-links .toggle-user-dropdown span').click(function(e) {
-        var $dropdownMenu = $('.global-header + .nav-links .nav-item .dropdown-user-menu');
-        var $userDropdown = $('.global-header + .nav-links .toggle-user-dropdown');
+    $('.umnoc-global-header + .nav-links .toggle-user-dropdown, .umnoc-global-header + .nav-links .toggle-user-dropdown span').click(function(e) {
+        var $dropdownMenu = $('.umnoc-global-header + .nav-links .nav-item .dropdown-user-menu');
+        var $userDropdown = $('.umnoc-global-header + .nav-links .toggle-user-dropdown');
         if ($dropdownMenu.is(':visible')) {
             $dropdownMenu.addClass('hidden');
             $userDropdown.attr('aria-expanded', 'false');
@@ -34,15 +34,15 @@ $(document).ready(function() {
             $dropdownMenu.find('.dropdown-item')[0].focus();
             $userDropdown.attr('aria-expanded', 'true');
         }
-        $('.global-header + .nav-links .toggle-user-dropdown').toggleClass('open');
+        $('.umnoc-global-header + .nav-links .toggle-user-dropdown').toggleClass('open');
         e.stopPropagation();
     });
 
     // Hide user dropdown on click away
-    if ($('.global-header + .nav-links .nav-item .dropdown-user-menu').length) {
+    if ($('.umnoc-global-header + .nav-links .nav-item .dropdown-user-menu').length) {
         $(window).click(function(e) {
-            var $dropdownMenu = $('.global-header + .nav-links .nav-item .dropdown-user-menu');
-            var $userDropdown = $('.global-header + .nav-links .toggle-user-dropdown');
+            var $dropdownMenu = $('.umnoc-global-header + .nav-links .nav-item .dropdown-user-menu');
+            var $userDropdown = $('.umnoc-global-header + .nav-links .toggle-user-dropdown');
             if ($userDropdown.is(':visible') && !$(e.target).is('.dropdown-item, .toggle-user-dropdown')) {
                 $dropdownMenu.addClass('hidden');
                 $userDropdown.attr('aria-expanded', 'false');
@@ -51,8 +51,8 @@ $(document).ready(function() {
     }
 
     // Toggling menu visibility with the hamburger menu
-    $('.global-header .hamburger-menu').click(function() {
-        $hamburgerMenu = $('.global-header .hamburger-menu');
+    $('.umnoc-global-header .hamburger-menu').click(function() {
+        $hamburgerMenu = $('.umnoc-global-header .hamburger-menu');
         $mobileMenu = $('.mobile-menu');
         if ($mobileMenu.is(':visible')) {
             $mobileMenu.addClass('hidden');
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
     // Hide hamburger menu if no nav items (sign in and register pages)
     if ($('.mobile-nav-item').size() === 0) {
-        $('.global-header .hamburger-menu').addClass('hidden');
+        $('.umnoc-global-header .hamburger-menu').addClass('hidden');
     }
 
     createMobileMenu();
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 
 // Accessibility keyboard controls for user dropdown and mobile menu
-$('.mobile-menu, .global-header').on('keydown', function(e) {
+$('.mobile-menu, .umnoc-global-header').on('keydown', function(e) {
     'use strict';
     var isNext,
         nextLink,
@@ -86,9 +86,9 @@ $('.mobile-menu, .global-header').on('keydown', function(e) {
         isHamburgerMenu = $curTarget.hasClass('hamburger-menu'),
         isMobileOption = $curTarget.parent().hasClass('mobile-nav-link'),
         isDropdownOption = !isMobileOption && $curTarget.parent().hasClass('dropdown-item'),
-        $userDropdown = $('.global-header + .nav-links .user-dropdown'),
-        $hamburgerMenu = $('.global-header .hamburger-menu'),
-        $toggleUserDropdown = $('.global-header + .nav-links .toggle-user-dropdown');
+        $userDropdown = $('.umnoc-global-header + .nav-links .user-dropdown'),
+        $hamburgerMenu = $('.umnoc-global-header .hamburger-menu'),
+        $toggleUserDropdown = $('.umnoc-global-header + .nav-links .toggle-user-dropdown');
 
     // Open or close relevant menu on enter or space click and focus on first element.
     if ((e.key === 'Enter' || e.key === 'Space') && (isToggle || isHamburgerMenu)) {
@@ -104,9 +104,9 @@ $('.mobile-menu, .global-header').on('keydown', function(e) {
                 $hamburgerMenu.attr('aria-expanded', false);
             }
         } else if (isToggle) {
-            if ($('.global-header + .nav-links .nav-item .dropdown-user-menu').is(':visible')) {
+            if ($('.umnoc-global-header + .nav-links .nav-item .dropdown-user-menu').is(':visible')) {
                 $userDropdown.attr('aria-expanded', 'true');
-                $('.global-header + .nav-links .dropdown-item a:first').focus();
+                $('.umnoc-global-header + .nav-links .dropdown-item a:first').focus();
             } else {
                 $userDropdown.attr('aria-expanded', false);
             }
@@ -123,11 +123,11 @@ $('.mobile-menu, .global-header').on('keydown', function(e) {
         } else if (!isNext && (isHamburgerMenu || isToggle)) {
             // Loop to the end when up arrow pressed from menu icon
             nextLink = isHamburgerMenu ? $('.mobile-menu .mobile-nav-link a').last()
-                : $('.global-header + .nav-links .dropdown-user-menu .dropdown-nav-item').last().find('a');
+                : $('.umnoc-global-header + .nav-links .dropdown-user-menu .dropdown-nav-item').last().find('a');
         } else if (isNext && (isHamburgerMenu || isToggle)) {
             // Loop to the first element from the menu icon
             nextLink = isHamburgerMenu ? $('.mobile-menu .mobile-nav-link a').first()
-                : $('.global-header + .nav-links .dropdown-user-menu .dropdown-nav-item').first().find('a');
+                : $('.umnoc-global-header + .nav-links .dropdown-user-menu .dropdown-nav-item').first().find('a');
         } else {
             // Loop up to the menu icon if first element in menu
             if (!isNext && $curTarget.parent().is(':first-child') && !isHamburgerMenu && !isToggle) {
@@ -148,10 +148,10 @@ $('.mobile-menu, .global-header').on('keydown', function(e) {
     // Escape clears out of the menu
     if (e.key === 'Escape' && (isDropdownOption || isHamburgerMenu || isMobileOption || isToggle)) {
         if (isDropdownOption || isToggle) {
-            $('.global-header + .nav-links .nav-item .dropdown-user-menu').addClass('hidden');
+            $('.umnoc-global-header + .nav-links .nav-item .dropdown-user-menu').addClass('hidden');
             $toggleUserDropdown.focus()
                 .attr('aria-expanded', 'false');
-            $('.global-header + .nav-links .toggle-user-dropdown').removeClass('open');
+            $('.umnoc-global-header + .nav-links .toggle-user-dropdown').removeClass('open');
         } else {
             $('.mobile-menu').addClass('hidden');
             $hamburgerMenu.focus()
@@ -172,7 +172,7 @@ $('.mobile-menu, .global-header').on('keydown', function(e) {
         e.preventDefault();
         if (isDropdownOption || isToggle) {
             nextLink = loopFirst ? $toggleUserDropdown :
-                $('.global-header + .nav-links .dropdown-user-menu .dropdown-nav-item a').last();
+                $('.umnoc-global-header + .nav-links .dropdown-user-menu .dropdown-nav-item a').last();
         } else {
             nextLink = loopFirst ? $hamburgerMenu : $('.mobile-menu .mobile-nav-link a').last();
         }
