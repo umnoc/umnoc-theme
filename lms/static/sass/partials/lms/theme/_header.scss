@@ -52,6 +52,14 @@
   color: $dark;
   width: 100%;
 
+  @include media-breakpoint-down(md) {
+    &{
+      justify-content: space-between;
+      padding: 0 20px;
+      width: calc(100% - 40px);
+    }
+  }
+
   .main {
     display: flex;
     //padding: 0 24px;
