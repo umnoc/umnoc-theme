@@ -57,9 +57,6 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
                             <a class="nav-link" href="${link['url']}">${link['title']}</a>
                         </li>
                         % endfor
-                        <li class="nav-item">
-                            <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -138,7 +135,6 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
                         <a href="${link['url']}">${link['title']}</a>
                     </li>
                     % endfor
-                    <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
                 </ul>
             </nav>
         </div>
