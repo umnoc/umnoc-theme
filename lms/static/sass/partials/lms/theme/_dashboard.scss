@@ -53,11 +53,16 @@
             border-radius: 0.4rem;
           }
           @include media-breakpoint-down(sm) {
-            display: block;
+            &{
+              display: block;
+            }
+            
           }
         }
         @include media-breakpoint-down(md) {
+          &{
           padding-left: 0;
+        }
         }
       }
     }
