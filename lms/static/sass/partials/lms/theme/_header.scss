@@ -53,7 +53,7 @@
   width: 100%;
 
   .main {
-    display: inline flex;
+    display: flex;
     //padding: 0 24px;
 
   }
@@ -99,6 +99,7 @@
   .nav-item {
 
     a {
+      padding: 1rem;
       align-items: center;
       box-sizing: border-box;
       color: $dark;
@@ -122,6 +123,10 @@
       vertical-align: middle;
       white-space: normal;
 
+      &.hover {
+        text-decoration: none;
+      }
+
       &.active {
         border-bottom: 2px solid;
         color: $primary;
@@ -144,7 +149,7 @@
     margin: .125rem 0 0;
     min-width: 16rem;
     position: absolute;
-    transform: translate(-50%, 0vw);
+    transform: translate(-90%, 0vw);
     z-index: 1000;
 
     a {
@@ -164,7 +169,7 @@
     }
 
     .dropdown-nav-item {
-      box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 7px -5px, rgba(0, 0, 0, 0.2) 1px 1px 1px 0;
+      box-shadow:  rgba(0, 0, 0, 0.2) 1px 1px 1px 0;
 
       a {
         padding: 0 1rem;
