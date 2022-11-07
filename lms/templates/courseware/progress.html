@@ -71,7 +71,7 @@ username = get_enterprise_learner_generic_name(request) or student.username
                     <div id="errors-info" class="errors-info"></div>
                     <%block name="certificate_block">
                         %if certificate_data:
-                        <div class="auto-cert-message" id="course-success">
+                        <div class="auto-cert-message" id="course-success" style="display: none;">
                             <div class="has-actions">
                                 <% post_url = reverse('generate_user_cert', args=[text_type(course.id)]) %>
                                 <div class="msg-content">
