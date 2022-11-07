@@ -120,6 +120,7 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
             </div>
 
             ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+            <p class="copyright_umnoc">${footer['copyright_umnoc']}</p>
             <p class="copyright">${footer['copyright']}
                 % if icp_license_info.get('icp_license'):
                 ${u" | {text}".format(text=icp_license_info.get('text'))}
