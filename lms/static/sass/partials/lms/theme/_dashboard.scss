@@ -10,31 +10,40 @@
   width: 100%;
 
   article.course {
-    border: 2px solid $primary;
-    border-radius: .7rem;
+    border: 1px solid $primary;
+    border-radius: .5rem;
     padding: 1.5rem;
   }
 
   .main-container {
     padding: unset;
 
-    .my-courses .course .details {
+    .my-courses {
+      .listing-courses .course-item .course-container {
+        border: 1px solid #f5f5f5;
+        border-radius: 0.5rem;
+    }
+      .course .details {
 
-      .enter-course {
-        background-color: $white;
-        border-radius: .3rem;
-        color: $primary;
+        .enter-course {
+          background-color: $white;
+          border-radius: .3rem;
+          color: $primary;
 
-        &:hover {
-          background-color: $primary;
-          color: $white;
+          &:hover {
+            background-color: $primary;
+            color: $white;
+          }
         }
-      }
 
-      .wrapper-course-image {
-        max-height: 180px;
-        width: 25%;
-
+        .wrapper-course-image {
+          max-height: 200px;
+          width: 30%;
+          overflow: visible;
+          .course-image{
+            border-radius: 0.4rem;
+          }
+        }
       }
     }
   }
