@@ -8,7 +8,7 @@ cd themes/umnoc-theme/
 git pull
 cd ~/edx-platform/
 
-paver update_assets lms --settings=production
+paver update_assets lms --themes umnoc-theme --settings=production
 python manage.py lms --settings=production collectstatic --noinput
 EOF
 
