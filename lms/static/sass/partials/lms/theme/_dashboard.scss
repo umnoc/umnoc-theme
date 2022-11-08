@@ -51,6 +51,7 @@
           min-width: 310px;
           .course-image{
             border-radius: 0.4rem;
+            max-height: 206px;
           }
           @include media-breakpoint-down(sm) {
             &{
