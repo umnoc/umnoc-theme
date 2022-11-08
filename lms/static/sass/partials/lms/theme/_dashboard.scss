@@ -17,7 +17,7 @@
     padding: 0;
   }
 
- article.course {
+  article.course {
     border: 1px solid $primary;
     border-radius: .5rem;
     // padding: 1.5rem;
@@ -32,40 +32,40 @@
         border-radius: .5rem;
    }
 
-     .course .details {
+       .course .details {
 
-       .enter-course {
-          background-color: $white;
-          border-radius: .3rem;
-          color: $primary;
+         .enter-course {
+            background-color: $white;
+            border-radius: .3rem;
+            color: $primary;
 
-          &:hover {
-            background-color: $primary;
-            color: $white;
-          }
-        }
-
-        .wrapper-course-image {
-          max-height: 210px;
-          min-width: 310px;
-          overflow: visible;
-          width: 30%;
-          .course-image{
-            border-radius: .4rem;
-            max-height: 206px;
-          }
-          @include media-breakpoint-down(sm) {
-            &{
-              display: block;
+            &:hover {
+              background-color: $primary;
+              color: $white;
             }
-            
           }
-        }
-        @include media-breakpoint-down(md) {
-          &{
-          padding-left: 0;
-        }
-        }
+
+          .wrapper-course-image {
+            max-height: 210px;
+            min-width: 310px;
+            overflow: visible;
+            width: 30%;
+            .course-image{
+              border-radius: .4rem;
+              max-height: 206px;
+            }
+            @include media-breakpoint-down(sm) {
+              &{
+                display: block;
+              }
+
+            }
+          }
+          @include media-breakpoint-down(md) {
+            &{
+            padding-left: 0;
+          }
+          }
       }
     }
   }

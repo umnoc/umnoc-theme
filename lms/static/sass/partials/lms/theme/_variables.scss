@@ -120,6 +120,8 @@ $dark: $gray-800 !default;
 
 
 $honor-mode-color: $primary !default;
+$verified-mode-color: $success !default;
+$professional-certificate-color: darken($umnoc-pink, 80%) !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
