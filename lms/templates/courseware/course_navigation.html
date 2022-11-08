@@ -40,7 +40,7 @@ masquerading_as_student = is_masquerading_as_student(request.user, course.id)
     <%
     tab_list = get_course_tab_list(request.user, course)
     %>
-    % if uses_bootstrap and False:
+    % if uses_bootstrap:
         <nav class="navbar course-tabs pb-0 navbar-expand" aria-label="${_('Course')}">
             <ul class="navbar-nav mr-auto">
                 % for tab in tab_list:
