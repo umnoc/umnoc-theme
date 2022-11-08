@@ -12,12 +12,12 @@
   margin: 0 auto;
   // max-width: 1200px;
   width: 100%;
-  
+
   .side-container {
-    padding: 0px;
+    padding: 0;
   }
 
-  article.course {
+ article.course {
     border: 1px solid $primary;
     border-radius: .5rem;
     // padding: 1.5rem;
@@ -27,13 +27,14 @@
     padding: unset;
 
     .my-courses {
-      .listing-courses .course-item .course-container {
+     .listing-courses .course-item .course-container {
         border: 1px solid #f5f5f5;
-        border-radius: 0.5rem;
-    }
-      .course .details {
+        border-radius: .5rem;
+   }
 
-        .enter-course {
+     .course .details {
+
+       .enter-course {
           background-color: $white;
           border-radius: .3rem;
           color: $primary;
@@ -46,11 +47,11 @@
 
         .wrapper-course-image {
           max-height: 210px;
-          width: 30%;
-          overflow: visible;
           min-width: 310px;
+          overflow: visible;
+          width: 30%;
           .course-image{
-            border-radius: 0.4rem;
+            border-radius: .4rem;
             max-height: 206px;
           }
           @include media-breakpoint-down(sm) {
