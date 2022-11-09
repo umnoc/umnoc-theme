@@ -75,7 +75,7 @@ masquerading_as_student = is_masquerading_as_student(request.user, course.id)
             % if tab.name == 'Dates':
                 ${tab}
             % endif
-        $ endfor
+        % endfor
         <nav class="${active_page} wrapper-course-material" aria-label="${_('Course Material')}">
             <div class="course-material">
                 <%
@@ -88,3 +88,4 @@ masquerading_as_student = is_masquerading_as_student(request.user, course.id)
             </div>
         </nav>
     % endif
+%endif
