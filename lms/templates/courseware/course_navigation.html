@@ -51,6 +51,7 @@ masquerading_as_student = is_masquerading_as_student(request.user, course.id)
                             <% continue %>
                         %  elif tab.name == 'Dates':
                             <% continue %>
+                         ${tab.name}
                         % else:
                             <li class="nav-item ${'active' if tab_is_active else ''}">
                                 <a href="${tab.link_func(course, reverse)}" class="nav-link">
