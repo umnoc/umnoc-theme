@@ -32,7 +32,7 @@ enterprise_customer_link = get_enterprise_learner_portal(request)
         <img class="logo" src="${branding_api.get_logo_url(is_secure)}" alt="${_("{platform_name}").format(platform_name=static.get_platform_name())}"/>
       </%block>
     </a>
-  <p class="logo-extra-text">${settings.LOGO_IMAGE_EXTRA_TEXT}</p>
+  <p class="logo-extra-text">${settings.LOGO_IMAGE_EXTRA_TEXT} ${request.path}</p>
   % endif
   % if course:
     <div class="umnoc-course-header">
