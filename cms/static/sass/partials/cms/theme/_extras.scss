@@ -128,9 +128,7 @@ html {
 }
 
 nav {
-  .nav-course.nav-dd.ui-left {
-    ol {
-      white-space: nowrap;
-    }
+  .wrapper-nav-sub {
+    z-index: 10;
   }
 }
