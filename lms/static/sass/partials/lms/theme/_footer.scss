@@ -11,6 +11,15 @@
     margin: 0 auto;
     // max-width: map-get($container-max-widths, lg);
 
+    nav {
+
+      ul,
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
     .support {
       color: $gray-100;
       font-size: 1.5em;
