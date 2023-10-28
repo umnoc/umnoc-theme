@@ -12,10 +12,10 @@
     // max-width: map-get($container-max-widths, lg);
 
     .support {
-      color:$gray-100;
+      color: $gray-100;
       font-size: 1.5em;
 
-      a{
+      a {
         text-decoration: underline;
       }
 
@@ -79,6 +79,7 @@
     }
 
     .colophon {
+
       nav,
       div,
       p {
@@ -88,23 +89,28 @@
       .nav-colophon {
         @include clearfix();
 
-        li {
-          @include float(left);
+        ol,
+        ul {
+          list-style: none;
 
-          margin-right: ($baseline*.75);
+          li {
+            @include float(left);
 
-          a {
-            color: $white;
+            margin-right: ($baseline*.75);
 
-            &:hover,
-            &:focus,
-            &:active {
-              color: $gray-100;
+            a {
+              color: $white;
+
+              &:hover,
+              &:focus,
+              &:active {
+                color: $gray-100;
+              }
             }
-          }
 
-          &:last-child {
-            margin-right: 0;
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
       }
@@ -112,11 +118,18 @@
   }
 
   .nav-legal {
-    li {
-      padding-bottom: .5rem;
-    }
-    a {
-      color: $white !important;
+
+    ol,
+    ul {
+      list-style: none;
+
+      li {
+        padding-bottom: .5rem;
+      }
+
+      a {
+        color: $white !important;
+      }
     }
   }
 }
