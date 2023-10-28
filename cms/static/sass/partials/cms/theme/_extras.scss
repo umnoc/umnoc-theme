@@ -17,7 +17,7 @@ html {
   background: $white;
   border-bottom: 1px solid $primary;
   box-shadow: 0 2px 2px 0 transparentize($primary, .2);
-  margin-bottom: 2em;
+  margin-bottom: 2em !important;
   padding: .5rem 0;
   position: relative;
   width: 100%;
