@@ -61,13 +61,18 @@ html {
   background-color: $white;
 }
 
-.xblock-visibility_view .is-not-configured, .view-outline .content-primary .no-content, .view-static-pages .content-primary .add-pages,
+.xblock-visibility_view .is-not-configured,
+.view-outline .content-primary .no-content,
+.view-static-pages .content-primary .add-pages,
 .view-container .content-primary .no-container-content,
 .view-textbooks .content-primary .no-textbook-content,
 .view-group-configurations .content-primary .no-content,
-.view-certificates .content-primary .no-content, .ui-loading, .notice-incontext,
+.view-certificates .content-primary .no-content,
+.ui-loading,
+.notice-incontext,
 .view-uploads .no-asset-content,
-.view-import .wrapper-file-name, .view-group-configurations .content-primary .notice-module .disabled,
+.view-import .wrapper-file-name,
+.view-group-configurations .content-primary .notice-module .disabled,
 .view-certificates .content-primary .notice-module .disabled {
   padding: 15px 20px;
   box-shadow: 2px 1px 5px 0 $primary;
@@ -122,3 +127,10 @@ html {
   }
 }
 
+nav {
+  .nav-course.nav-dd.ui-left {
+    ol {
+      white-space: nowrap;
+    }
+  }
+}
