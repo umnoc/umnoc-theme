@@ -18,11 +18,11 @@
   }
 }
 
-.nav-links {
-  @include media-breakpoint-down(lg) {
-    justify-content: space-around;
-  }
-}
+// .nav-links {
+//   @include media-breakpoint-down(lg) {
+//     justify-content: space-around;
+//   }
+// }
 
 .umnoc-pink {
   color: $secondary;
@@ -114,6 +114,8 @@
 }
 
 .wrapper-header-courses {
+  margin-bottom: unset;
+
   .header-courses {
     color: $umnoc-pink;
     font-weight: bold;
@@ -154,8 +156,8 @@
 }
 
 .content-wrapper {
-  margin: inherit;
-  max-width: none;
+  margin: unset;
+  max-width: unset;
 
   .course-tabs {
     margin: 0 auto;
