@@ -120,21 +120,17 @@
       flex-shrink: 0;
       font-family: $font-family-sans-serif;
       font-size: 14px;
-      // font-weight: 500;
       justify-content: space-around;
-      // letter-spacing: .02857em;
-      // line-height: 1.25;
-      // margin: 0;
       max-width: 360px;
       min-width: 90px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       user-select: none;
-      // vertical-align: middle;
       white-space: normal;
 
-      &.hover {
+      &:hover {
+        color: unset;
         text-decoration: none;
       }
 
