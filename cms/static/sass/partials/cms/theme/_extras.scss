@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .page-header {
   color: $secondary;
@@ -16,15 +16,16 @@ html {
 .wrapper-header {
   background: $white;
   border-bottom: 1px solid $primary;
-  box-shadow: 0 2px 2px 0 transparentize($primary, .2);
+  box-shadow: 0 2px 2px 0 transparentize($primary, 0.2);
   margin-bottom: 2em !important;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   position: relative;
   width: 100%;
 }
 
 .wrapper.wrapper-view {
-  background: url('/static/studio/umnoc-theme/images/umnoc-bg-circles.svg') no-repeat bottom;
+  background: url("/static/studio/umnoc-theme/images/umnoc-bg-circles.svg")
+    no-repeat bottom;
   background-position-x: 0;
   background-position-y: 0;
   background-size: 100% auto;
@@ -48,12 +49,12 @@ html {
   color: $white !important;
   font-size: 1.4rem !important;
   font-weight: 600 !important;
-  padding: .8rem 1.4rem !important;
+  padding: 0.8rem 1.4rem !important;
 
   &:hover {
-    background-color: $white !important;
-    border: 2px solid $primary !important;
-    color: $primary !important;
+    background-color: #d4daff !important;
+    border: 1px solid #767fb3 !important;
+    color: #3f51b5 !important;
   }
 }
 
@@ -98,7 +99,7 @@ html {
 .list-courses {
   background: $white;
   border: 2px solid $primary;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 
   .course-item {
     .course-title {
@@ -126,7 +127,6 @@ html {
     color: $secondary;
   }
 }
-
 
 .wrapper-nav-sub {
   z-index: 10;
